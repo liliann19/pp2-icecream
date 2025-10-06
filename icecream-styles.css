@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+main {
+    background-color: white;
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    padding: 0 1rem 2rem 1rem;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    padding: 1.5rem;
+}
+
+#personal-info-header, #order-details-header {
+    color: #7dbd83;
+    text-align: center;
+    font-weight: 600;
+} 
+
+fieldset {
+    border: 0.5px solid #ced4da;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: .75rem;  
+}
+
+#comment, label[for="comment"]{
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+}
+
+#order-button {
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #7dbd83;
+    border-color: #7dbd83;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+
