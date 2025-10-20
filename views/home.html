@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream</title>
 
+    <script src="js/ice-cream.js" defer></script>
+
     <!-- Favicon  -->
-    <link rel="icon" href="icon.png">
+    <link rel="icon" href="images/icon.png">
 
     <!-- Stylesheet -->
-    <link rel="Stylesheet" href="icecream-styles.css">
+    <link rel="stylesheet" href="styles/icecream-styles.css">
 </head>
 <body>
     <main>
@@ -18,8 +20,13 @@
         <form id="icecream-form" action="#" method="get"> 
             <fieldset>
                 <legend id="personal-info-header">Personal Information</legend>
-                <label for="name">Name:</label><input type="text" id="name" name="name">
-                <label for="email">Email:</label><input type="text" id="email" name="email">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span id="err-name" class="error">Name cannot be empty</span><br>
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <span id="err-email" class="error">Email cannot be empty</span>
             </fieldset>
 
             <fieldset>
@@ -27,16 +34,19 @@
                 <!-- Flavors -->
                 <label for="flavor">Choose your flavor:</label>
                 <select id="flavor" name="flavor">
+                    <option value="none">Select a flavor</option>
                     <option value="vanilla">Vanilla</option>
                     <option value="chocolate">Chocolate</option>
                     <option value="oreo">Oreo</option>
                 </select>
+                <span id="err-flavor" class="error">Please select a flavor</span>
 
                 <!-- Cone  -->
                 <p>Choose your cone:</p>
                     <label for="waffle"><input type='radio' id="waffle" name="method" value="waffle">Waffle Cone</label>
                     <label for="sugar"><input type='radio' id="sugar" name="method" value="sugar">Sugar Cone</label> 
-                    <label for="cup"><input type='radio' id="cup" name="method" value="cup">Cup</label>     
+                    <label for="cup"><input type='radio' id="cup" name="method" value="cup">Cup</label>   
+                    <span id="err-method" class="error">Please select a cone</span>  
                 
                 <!-- Toppings -->
                 <p>Toppings:</p>
